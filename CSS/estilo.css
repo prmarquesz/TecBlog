@@ -1,0 +1,128 @@
+/*Limpar formatações padrão*/ /*1º limpar as formatações padrão*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{/*aplica formatações para todo o body*/
+	font-size: 1em;/*equivale a 16px*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif;/*fonte do body*/
+	background: #e6e6e6;/*cor de fundo*/
+}
+
+
+/*
+*** Layout ***
+*/
+#area-cabecalho{/*1º começando sempre pelo cabeçalho*/
+	background-color: #f7b600;/*cor de laranja mostarda*/
+	padding: 15px;/*espaçamento geral*/
+	text-align: center;/*alinhamento central*/
+}
+
+#area-logo, #area-menu{/*2º trabalhando com a área de menu, espaçamento entre o título e os links*/
+	padding: 10px;
+}
+
+#area-principal{/*5º formatação da área principal de postagens */
+	width: 920px;/*largura total da área principal*/
+	margin: 0 auto;/*zero de top e bottom e, automático nos lados*/
+	padding: 15px;
+}
+
+#area-postagens{/*5.1 formatação da área de postagem*/
+	width: 660px;/*largura dentro dos 920px da área principal, dividindo com a área-lateral*/
+	float: left;/*flutuando a esquerda*/
+}
+
+.postagem{/*Classe da primeira postagem*/
+	padding: 20px;/*espaçamento interno*/
+	margin-bottom: 20px;/*margin para o não grudar no rodapé*/
+	background: white;/*cor de fundo*/
+}
+
+.conteudo-lateral{/*formata a caixa do conteúdo lateral*/
+	background: white;/*cor de fundo*/
+	padding: 10px;/*espaçamento interno*/
+	margin-bottom: 20px;/*margin inferior*/
+}
+
+.postagem-lateral{/*conteúdo dentro do cloco lateral*/
+	font-size: 0.8em;/*fonte do texto*/
+	padding: 5px;/*espaçamento interno*/
+	border-bottom: 1px solid #CCC;/*borda clara*/
+}
+
+#area-lateral{/*5.2 formatação da área lateral*/
+	width: 240px;/*largura contando com os 920px da área-principal. dividindo com a área-postagens*/
+	float: right;/*flutuando a esquerda*/
+}
+
+#rodape{/*5.3 formatação do rodapé*/
+	text-align: center;/*alinhado ao centro*/
+	clear: both;/*limpa a formatação para interferir na área principal*/
+	padding: 15px;/*espaçamento interno*/
+	background: #CCC;/*cinza clarinho de cor de fundo*/
+}
+
+/*
+*** Formatações em geral ***
+*/
+a{/*Formata todos os menus por padrão*/
+	text-decoration: none;/*remove os underline dos menus*/
+	padding: 8px 12px;/*espaçamento em cima e baixo de 8px, e esquerda e direita de 12px*/
+}
+
+a:link, a:visited{/*links não visitados, e visitados*/
+	color: #f7b600;/*cor do link*/
+}
+
+a:hover{/*efeito ao passar o mouse*/
+	text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited{/*4º trabalhanco com os menus*/
+	color: #FFF;/*Cor branca*/
+
+}
+
+#area-cabecalho a:hover{/*efeito ao passar o mouse*/
+	color: #f7b000;/*deixa as cores na mesma tonalidade da área do logo, laranja mostarda*/
+	background: #FFF;/*cor de fundo*/
+	text-decoration: none;/*remove o sublinhado*/
+}
+
+
+/*
+*** Formatações em geral ***
+*/
+h1{/*3º definindo a cor do título e a fonte*/
+	color: #4e4e4e;/*cor cinza claro*/
+	font-size: 2.5em;/*tamanho da fonte*/
+}
+
+h2{/*título das postagens*/
+	color: #f7b600;/*cor laranja mostarda*/
+}
+
+h3{/*título da area-lateral*/
+	color: #565656;/*cinza ultra claro*/
+	background: #CCC;/*fundo cinza clarinho*/
+	padding: 5px;/*espaçamento interno*/
+}
+
+.branco{/*span no BLOG do título para deixa-lo na cor branca*/
+	color: white;
+}
+
+.data-postagem{/*formatação da data postagem*/
+	font-size:  0.8em;/*tamanho da fonte*/
+	border-bottom: 1px solid #f4f4f4;/*borda inferior*/
+	padding: 10px;/*esáçamento interno*/
+	margin-bottom: 10px;/*margin inferior*/
+	display: block;/*torna visível as formatações, já que sua largura ocupará a tela inteira*/
+	
+}
+
+
+
